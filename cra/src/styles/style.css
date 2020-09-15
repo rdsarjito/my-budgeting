@@ -1,0 +1,165 @@
+body {
+  box-sizing: border-box;
+  background-color: wheat;
+  color: black;
+}
+
+h3, h5{
+  margin: 0;
+}
+
+.wrapper {
+  border-radius: 2.5rem;
+  height: 95vh;;
+  width: 300px;
+  margin: 0 auto;
+  color: white;
+  overflow: hidden;
+  background-color: white;
+}
+
+.budget {
+  height: 35vh;
+  background-color: #22292C;
+  border-radius: 2.5rem 2.5rem 0.7rem 0.7rem;
+  padding: 45px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.budget-income {
+  height: 15vh !important;
+}
+.budget-title {
+  color: gray;
+  font-size: 0.8em;
+  text-align: center;
+  padding-bottom: 3px;
+}
+.budget-balance {
+  color: white;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+}
+.inc-exp-total-box {
+  background-color: white;
+  left: calc(50% - 138px);
+  position: absolute;
+  bottom: -50px;
+  border-radius: 0.8rem;
+  margin: 0 auto;
+  width: 275px;
+  height: 15vh;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.inc-exp-total {
+  padding: 12px;
+  display: flex;
+  justify-content: space-around;
+  color: black;
+}
+.inc-title, .exp-title {
+  margin-bottom: 12px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.inc-balance, .exp-balance {
+  font-size: 1rem;
+  text-align: center;
+}
+.inc-add, .exp-add {
+  margin-top: 15px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.mid-border {
+  border: 1px solid black;
+}
+
+.history {
+  margin: 80px 15px 0 15px;
+  color: black;
+}
+
+.history-income {
+  background-color: black;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+}
+.history-title {
+  font-size: 1.2rem;
+}
+.history-all {
+  font-size: 0.8rem;
+}
+.history-box {
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.history-content {
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  height: 7vh;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  font-size: 10px;
+}
+
+/* Income */
+.income {
+  position: relative;
+  height: 100%;
+}
+
+.btn-add-income {
+  border: 0; 
+  height: 70px;
+  border-radius: 50%;
+  width:70px;
+  background: #22292C;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  justify-content: end;
+  color: white;
+  margin: 10px;
+} 
+
+.add-icon {
+  font-size: 60px;
+}
+
+.title {
+  background-color: #22292C;
+  padding: 20px;
+}
+.title-content {
+  display: flex;
+}
+.btn-back img {
+  width: 25px;
+  margin-right: 20px;
+}
+.add-income-title {
+  padding: 3px;
+}
+.content {
+  color: black;
+}
+.input {
+  background-color: gray;
+  border: 2px solid black;
+}
