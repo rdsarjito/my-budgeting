@@ -5,7 +5,7 @@ import moneyDots from '../helper/moneyDots';
 
 class IncomeBalance extends Component {
   componentDidMount() {
-    this.props.fetchIncome();
+    this.props.getIncome();
   };
 
   render() {

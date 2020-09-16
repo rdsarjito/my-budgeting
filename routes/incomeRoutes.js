@@ -3,7 +3,6 @@ const Income = mongoose.model('incomes');
 
 module.exports = app => {
   app.post('/api/income', async (req, res) => {
-    console.log(req.body)
     const { incomeName, incomeNominal } = req.body;
     const incomeDate = new Date();
     const newIncome = new Income({ incomeName, incomeNominal, incomeDate });
@@ -12,8 +11,13 @@ module.exports = app => {
     res.status(201).send(data);
   });
 
-  app.get('/api/income', async (req, res) => {
+  app.get('/api/income', (req, res) => {
     Income.find()
       .then(template => res.json(template));
   });
+
+  app.delete('/api/income/:id', (req, res) => {
+    Income.findByIdAndDelete(req.params.id)
+      .then(() => res.json())
+  })
 };

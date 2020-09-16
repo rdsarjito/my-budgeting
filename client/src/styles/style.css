@@ -8,6 +8,12 @@ h3, h5{
   margin: 0;
 }
 
+.btn-option {
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+}
 .wrapper {
   border-radius: 2.5rem;
   height: 95vh;;
@@ -21,8 +27,7 @@ h3, h5{
 .budget {
   height: 35vh;
   background-color: #22292C;
-  border-radius: 2.5rem 2.5rem 0.7rem 0.7rem;
-  padding: 45px 0 0 0;
+  border-radius: 0 0 0.7rem 0.7rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -103,6 +108,7 @@ h3, h5{
   display: flex;
   flex-direction: column-reverse;
 }
+
 .history-content {
   align-items: center;
   background-color: white;
@@ -138,6 +144,28 @@ h3, h5{
   margin: 10px;
 } 
 
+.setting-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+.setting-option {
+  display: none;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+}
+
 .add-icon {
   font-size: 60px;
 }
@@ -146,9 +174,11 @@ h3, h5{
   background-color: #22292C;
   padding: 20px;
 }
+
 .title-content {
   display: flex;
 }
+
 .btn-back img {
   width: 25px;
   margin-right: 20px;

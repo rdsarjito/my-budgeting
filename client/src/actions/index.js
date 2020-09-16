@@ -15,11 +15,17 @@ export const addIncome = (data) => async () => {
   };
 };
 
-export const fetchIncome = () => async dispatch => {
+export const getIncome = () => async dispatch => {
   const res = await axios({
     method: 'get',
     url: '/api/income',
   });
-  console.log(res)
   dispatch({ type: FETCH_INCOME, payload: res.data })
+};
+
+export const deleteIncome = (id) => async () => {
+  await axios({
+    method: 'delete',
+    url: '/api/income/' + id,
+  });
 };

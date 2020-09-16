@@ -15,15 +15,15 @@ class AddIncome extends Component {
     this._onChangeInputIncomeName = this._onChangeInputIncomeName.bind(this);
     this._onChangeInputIncomeNominal = this._onChangeInputIncomeNominal.bind(this);
     this._onSubmit = this._onSubmit.bind(this);
-  }
+  };
 
   _onChangeInputIncomeName(e) {
     this.setState({ incomeName: e.target.value });
-  }
+  };
 
   _onChangeInputIncomeNominal(e) {
     this.setState({ incomeNominal: e.target.value });
-  }
+  };
 
   _onSubmit(e) {
     e.preventDefault();
@@ -39,7 +39,7 @@ class AddIncome extends Component {
       incomeName: '',
       incomeNominal: ''
     });
-  }
+  };
 
   render() {
     return (
